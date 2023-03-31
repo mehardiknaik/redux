@@ -5,20 +5,20 @@ import { setCounter, setIncrement } from "../store/action";
 const LeftContainer = () => {
   const dispatch = useDispatch();
   return (
-    <div className="flex-1">
-      <button
-        onClick={() => {
-          dispatch(setCounter(2));
-        }}
-      >
-        LeftContainer
-      </button>
+    <div className="flex-1 flex gap">
       <button
         onClick={() => {
           dispatch(setIncrement());
         }}
       >
-        INCREMENT
+        Increment
+      </button>
+      <button
+        onClick={() => {
+          dispatch(setCounter(2));
+        }}
+      >
+        Set to 2
       </button>
     </div>
   );

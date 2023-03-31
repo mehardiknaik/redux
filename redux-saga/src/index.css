@@ -72,3 +72,18 @@ button:focus-visible {
 .flex-1 {
   flex: 1;
 }
+.just-between {
+  justify-content: space-between;
+}
+.just-center {
+  justify-content: center;
+}
+.just-end {
+  justify-content: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.gap{
+  gap:1rem
+}
