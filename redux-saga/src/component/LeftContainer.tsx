@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setCounter, setIncrement } from "../store/action";
+import { setCounter, setDecrement, setIncrement } from "../store/action";
 
 const LeftContainer = () => {
   const dispatch = useDispatch();
@@ -19,6 +19,13 @@ const LeftContainer = () => {
         }}
       >
         Set to 2
+      </button>
+      <button
+        onClick={() => {
+          dispatch(setDecrement());
+        }}
+      >
+        Increment
       </button>
     </div>
   );
