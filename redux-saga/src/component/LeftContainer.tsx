@@ -31,11 +31,11 @@ const LeftContainer = () => {
             dispatch(setDecrement());
           }}
         >
-          Increment
+          Decrement
         </button>
       </div>
       <div>
-        <button onClick={() => dispatch(userRequest())}>Refect data</button>
+        <button onClick={() => dispatch(userRequest())}>Refeatch data</button>
       </div>
     </div>
   );
