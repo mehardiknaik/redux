@@ -5,7 +5,7 @@ function* fetchUserSaga(): any {
   try {
     const response = yield call(
       fetch,
-      "https://random-data-api.com/api/v2/users?size=2"
+      "https://random-data-api.com/api/v2/users?size=10"
     );
     const responseBody = yield response.json();
     yield put(
