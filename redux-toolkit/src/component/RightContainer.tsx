@@ -20,16 +20,16 @@ const RightContainer = () => {
 
   if (isLoading) return "Loading...";
   if (isFetching) return "Featching...";
-
-  if (error) return error;
+  //@ts-ignore
+  if (error) return error?.status;
 
   return (
     <div className="flex-1">
-      <p>{count}</p>
-      <p>
+      <div>{count}</div>
+      <div>
         {!!allData?.results?.length &&
-          allData?.results?.map((e: any) => <div>{e.name}</div>)}
-      </p>
+          allData?.results?.map((e: any) => <div key={e.name}>{e.name}</div>)}
+      </div>
     </div>
   );
 };

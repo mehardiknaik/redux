@@ -9,8 +9,11 @@ const RightContainer = () => {
 
   return (
     <div className="flex-1">
-      <p>{selectedTime}</p>
-      <p>{!!user.length && user.map((e: any) => <div>{e.first_name}</div>)}</p>
+      <div>{selectedTime}</div>
+      <div>
+        {!!user.length &&
+          user.map((e: any) => <div key={e.first_name}>{e.first_name}</div>)}
+      </div>
     </div>
   );
 };
